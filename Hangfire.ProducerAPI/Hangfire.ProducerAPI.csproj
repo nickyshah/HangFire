@@ -14,4 +14,12 @@
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Service\IService\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Hangfire.Shared\Hangfire.Shared.csproj" />
+	</ItemGroup>
+
 </Project>

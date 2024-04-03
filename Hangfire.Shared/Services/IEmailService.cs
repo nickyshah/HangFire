@@ -1,4 +1,4 @@
-﻿namespace Hangfire.ProducerAPI.Service.IService
+﻿namespace Hangfire.Shared.Service
 {
     public interface IEmailService
     {

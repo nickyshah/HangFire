@@ -1,6 +1,5 @@
-﻿using Hangfire.ProducerAPI.Service.IService;
-using Hangfire.Server.options;
-using Hangfire.Server.Service.IService;
+﻿using Hangfire.Server.options;
+using Hangfire.Shared.Service;
 using Microsoft.Extensions.Options;
 
 namespace Hangfire.ProducerAPI.Service
@@ -18,9 +17,9 @@ namespace Hangfire.ProducerAPI.Service
             _password = serverOptions.Value.Password;
         }
 
-        public Task Execute()
+        public async Task Execute()
         {
-            _emailService.SendEmail(_email, _password);
+            await _emailService.SendEmailAsync(_email, _password);
         }
     }
 }

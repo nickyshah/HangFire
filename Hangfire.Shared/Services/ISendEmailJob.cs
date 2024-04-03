@@ -1,4 +1,4 @@
-﻿namespace Hangfire.Server.Service.IService
+﻿namespace Hangfire.Shared.Service
 {
     public interface ISendEmailJob
     {

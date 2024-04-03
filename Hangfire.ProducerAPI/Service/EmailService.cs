@@ -1,6 +1,6 @@
 ﻿using System.Net;
 using System.Net.Mail;
-using Hangfire.ProducerAPI.Service.IService;
+using Hangfire.Shared.Service;
 
 namespace Hangfire.ProducerAPI.Service
 {
