@@ -14,4 +14,8 @@
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hangfire.ProducerAPI\Hangfire.ProducerAPI.csproj" />
+  </ItemGroup>
 </Project>
